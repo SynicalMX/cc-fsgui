@@ -13,6 +13,7 @@ end
 
 if install then
     print("Installing Main Files...")
+    shell.run("wget", "https://raw.githubusercontent.com/SynicalMC/cc-fsgui/main/files.lua")
     shell.run("wget", "https://raw.githubusercontent.com/SynicalMC/cc-fsgui/main/prgm.lua")
     shell.run("mkdir", "/fsgui/assets")
     shell.run("move", "prgm.lua /fsgui/")
