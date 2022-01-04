@@ -24,9 +24,6 @@ if install then
     shell.run("wget", "https://raw.githubusercontent.com/SynicalMC/cc-fsgui/main/assets/lua.nfp")
     shell.run("wget", "https://raw.githubusercontent.com/SynicalMC/cc-fsgui/main/assets/folder.nfp")
     shell.run("wget", "https://raw.githubusercontent.com/SynicalMC/cc-fsgui/main/assets/folder_ro.nfp")
-    shell.run("move", "file.nfp /fsgui/assets/")
-    shell.run("move", "lua.nfp /fsgui/assets/")
-    shell.run("move", "folder.nfp /fsgui/assets/")
-    shell.run("move", "folder_ro.nfp /fsgui/assets/")
+    shell.run("cd", "../..")
     print("Done!\nType 'files' to open the gui!")
 end
