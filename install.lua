@@ -9,6 +9,7 @@ while input do
     else
         install = false
     end
+    input = false
 end
 
 if install then
